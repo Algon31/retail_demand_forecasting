@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.venv/
+venv/
+ENV/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# Data files (keep raw large files untracked, keep sample data)
+data/raw/*.zip
+data/raw/*.tar.gz
+data/processed/*.parquet
+data/features/*.parquet
+
+# Model artifacts (keep small demo models, ignore huge dumps)
+models/*.pkl
+models/*.bin
+*.log
+
+# Environment variables & local DB
+.env
+*.db
+*.sqlite3
+
+# IDE
+.vscode/
+.idea/
+.DS_Store

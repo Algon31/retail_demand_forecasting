@@ -1,0 +1,15 @@
+"""
+CLI Script to execute the End-to-End Pipeline.
+Usage:
+    python scripts/run_pipeline.py
+"""
+import sys
+from pathlib import Path
+
+# Add project root to sys.path
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
+from src.pipelines.orchestrator import run_end_to_end_pipeline
+
+if __name__ == "__main__":
+    run_end_to_end_pipeline()
